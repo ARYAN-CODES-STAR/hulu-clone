@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Head from "next/head";
 import Header from "../components/Header.js"
+import Nav from "../components/Nav.js"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,9 +22,12 @@ export default function Home() {
 
         <Header />
         {/* {Nav} */}
-
+        <Nav />
         {/* {Results} */}
 
     </div>
   )
 }
+
+
+//1.10 minutes
