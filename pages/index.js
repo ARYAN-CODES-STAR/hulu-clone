@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import Head from "next/head";
 import Header from "../components/Header.js"
 import Nav from "../components/Nav.js"
+import Results from "../components/Results.js"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,10 +25,13 @@ export default function Home() {
         {/* {Nav} */}
         <Nav />
         {/* {Results} */}
+        <Results />
 
     </div>
-  )
+  );
 }
 
 
-//1.10 minutes
+export async function getServerSideProps(context) {
+  const genre = context.query.genre;
+}
